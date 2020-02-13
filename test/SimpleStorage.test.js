@@ -102,8 +102,8 @@ describe('Simple Storage Contract', () => {
       const rollNumberBefore = await simpleStorageInstance.functions.rollNumber();
       console.log({rollNumberBefore});
 
-      const tx = await simpleStorageInstance.functions.updateRollNumber(newRollNo);
-      await tx.wait();
+    //  const tx = await simpleStorageInstance.functions.updateRollNumber(newRollNo);
+  //    await tx.wait();
 
       const rollNumberAfter = await simpleStorageInstance.functions.rollNumber();
       console.log({rollNumberAfter});
